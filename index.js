@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  mask: require('./lib/mask')
+  pick: require('./lib/pick')
 };
