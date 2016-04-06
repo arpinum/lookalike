@@ -1,0 +1,34 @@
+{
+  "name": "lookalike",
+  "version": "0.0.1",
+  "description": "Simple object to object mapper",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint .",
+    "mocha": "mocha --colors --reporter spec --recursive lib",
+    "test": "npm run eslint && npm run mocha",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "repository": "arpinum/lookalike",
+  "keywords": [
+    "Object",
+    "Mapper",
+    "Schema"
+  ],
+  "author": "Arpinum",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
+    "eslint-config-arpinum": "^3.0.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "lodash": "^4.8.2"
+  }
+}
